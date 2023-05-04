@@ -9,3 +9,43 @@ h1 {
 footer {
   text-align: center;
 }
+
+#main-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#big-container {
+  background-color: lightblue;
+  background-image: url("japan.jpg");
+  height: 900px;
+  width: 600px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.small-container {
+  background-color: lightgray;
+  height: 150px;
+  width: 500px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+#japan-container {
+  background-image: url("");
+}
+
+#san-francisco-container {
+  background-image: url("san-francisco.jpg");
+}
+
+#paris-container {
+  background-image: url("paris.jpg");
+}
+
+#seoul-container {
+  background-image: url("seoul.jpg");
+}
