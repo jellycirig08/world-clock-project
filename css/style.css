@@ -4,48 +4,105 @@ body {
 
 h1 {
   text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
 }
 
-footer {
-  text-align: center;
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  margin: 90px;
+  margin-left: 10px;
 }
 
-#main-container {
-  max-width: 800px;
+a {
+  color: #c7187e;
+}
+
+select {
+  display: block;
+  width: 500px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+select:focus {
+  z-index: 2;
 }
 
 #big-container {
-  background-color: lightblue;
+  background-color: #2c2c2c;
   background-image: url("japan.jpg");
   height: 900px;
   width: 600px;
   margin-bottom: 20px;
+  margin: 60px auto;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .small-container {
-  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  background-color: mediumpurple;
   height: 150px;
   width: 500px;
-  margin-bottom: 10px;
+  margin-left: -30px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.time {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: azure;
+  font-weight: bold;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.date {
+  margin-left: 10px;
+  margin-top: -90px;
+  color: blanchedalmond;
 }
 
 #japan-container {
-  background-image: url("");
+  background-image: url("../images/su-san-lee-E_eWwM29wfU-unsplash.jpg");
+  z-index: 1;
+  margin-top: 80px;
 }
 
 #san-francisco-container {
-  background-image: url("san-francisco.jpg");
+  background-image: url("../images/meric-dagli-r7GOO6M2TmU-unsplash.jpg");
+  opacity: 0.8;
 }
 
 #paris-container {
-  background-image: url("paris.jpg");
+  background-image: url("../images/kateryna-t-RkyYEVHrRbo-unsplash.jpg");
 }
 
 #seoul-container {
-  background-image: url("seoul.jpg");
+  background-image: url("../images/robson-hatsukami-morgan-ku9Ftte6Ymo-unsplash.jpg");
+}
+
+footer {
+  text-align: center;
+  color: aliceblue;
 }
