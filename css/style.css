@@ -54,7 +54,7 @@ select:focus {
   display: flex;
   justify-content: space-between;
   background-color: mediumpurple;
-  height: 150px;
+  height: 145px;
   width: 500px;
   margin-left: -30px;
   background-size: cover;
@@ -85,20 +85,20 @@ select:focus {
   color: blanchedalmond;
 }
 
-#japan-container {
+#tokyo {
   background-image: url("../images//\ tokyo.png");
   z-index: 1;
 }
 
-#san-francisco-container {
+#san-francisco {
   background-image: url("../images/sf.png");
 }
 
-#paris-container {
+#paris {
   background-image: url("../images/paris.png");
 }
 
-#Amsterdam-container {
+#amsterdam {
   background-image: url("../images/amsterdm.png");
 }
 
