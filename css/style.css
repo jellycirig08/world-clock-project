@@ -1,5 +1,5 @@
 body {
-  background-color: #b59f8a;
+  background-color: #8f8681;
 }
 
 h1 {
@@ -82,7 +82,7 @@ select:focus {
   color: azure;
   font-weight: bold;
   margin-right: 15px;
-  margin-top: 10px;
+  margin-top: 13px;
   align-self: flex-start;
 }
 

@@ -51,15 +51,10 @@ function updateCity(event) {
           <h2>${cityName}</h2>
           <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
         </div>
-        <div class="time">${cityTime.format(
-          "h:mm:ss"
-        )} <small>${cityTime.format("A")}</small></div>
       </div>
-      <div class="homepage-link">
-        <a href="https://peppy-fairy-73fb85.netlify.app/">
-          <i class="fa-duotone fa-house-chimney" style="--fa-primary-color: #e6beb7; --fa-secondary-color: #d1cfbd"></i>
-        </a>
-      </div>
+      <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small></div>
     </div>
   `;
 
@@ -67,9 +62,19 @@ function updateCity(event) {
   bigContainerElement.style.height = "400px";
   bigContainerElement.style.backgroundImage = `url("https://media3.giphy.com/media/7oPURW43ys7XZiCZGz/200w.webp?cid=ecf05e47id0m1yybgbre3ni6gies26wnyoz1jp7gu3ld7jjs&ep=v1_gifs_search&rid=200w.webp&ct=g")`;
 
-  let homepageIcon = document.querySelector(".fa-duotone.fa-house-chimney");
-  homepageIcon.addEventListener("click", function () {
-    window.location.href = "https://peppy-fairy-73fb85.netlify.app/";
+  let faHouseIcon = document.createElement("i");
+  faHouseIcon.classList.add("fa-solid", "fa-house");
+  faHouseIcon.style.color = "#ddc5bc";
+  faHouseIcon.style.fontSize = "30px";
+  faHouseIcon.style.position = "absolute";
+  faHouseIcon.style.left = "50%";
+  faHouseIcon.style.top = "50%";
+  faHouseIcon.style.transform = "translate(-50%, -50%)";
+  bigContainerElement.appendChild(faHouseIcon);
+
+  faHouseIcon.addEventListener("click", function () {
+    window.location.href =
+      "file:///Users/jellyorozco/Desktop/world-clock-project/index.html";
   });
 }
 
