@@ -38,23 +38,29 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
-  <div class="small-container-city">
-  <div class="city">
-    <div>
-      <h2>${cityName}</h2>
-      <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
-    </div>
-  </div>
-  <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    <div class="small-container-city">
+      <div class="city">
+        <div>
+          <h2>${cityName}</h2>
+          <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+        </div>
+      </div>
+      <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
-</div>
-
+    </div>
   `;
+
+  let bigContainerElement = document.querySelector("#big-container");
+  bigContainerElement.style.height = "400px";
+  bigContainerElement.style.backgroundImage = `url("https://media3.giphy.com/media/7oPURW43ys7XZiCZGz/200w.webp?cid=ecf05e47id0m1yybgbre3ni6gies26wnyoz1jp7gu3ld7jjs&ep=v1_gifs_search&rid=200w.webp&ct=g")`;
 }
 
 updateTime();
