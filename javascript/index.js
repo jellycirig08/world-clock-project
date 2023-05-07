@@ -73,8 +73,7 @@ function updateCity(event) {
   bigContainerElement.appendChild(faHouseIcon);
 
   faHouseIcon.addEventListener("click", function () {
-    window.location.href =
-      "file:///Users/jellyorozco/Desktop/world-clock-project/index.html";
+    window.location.href = "https://peppy-fairy-73fb85.netlify.app/";
   });
 }
 
