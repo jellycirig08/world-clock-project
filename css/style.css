@@ -50,19 +50,29 @@ select:focus {
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.small-container {
+.small-container-city {
   display: flex;
+  position: relative;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: mediumpurple;
   height: 145px;
   width: 500px;
-  margin-left: -30px;
+  margin: 20px auto;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  margin: 20px auto;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: azure;
 }
 
 .time {
@@ -72,6 +82,7 @@ select:focus {
   font-weight: bold;
   margin-right: 15px;
   margin-top: 10px;
+  align-self: flex-start;
 }
 
 .time small {
@@ -79,27 +90,21 @@ select:focus {
   vertical-align: middle;
 }
 
-.date {
-  margin-left: 10px;
-  margin-top: -90px;
-  color: blanchedalmond;
-}
-
 #tokyo {
-  background-image: url("../images//\ tokyo.png");
+  background-image: url("../images/tokyo.png");
   z-index: 1;
 }
 
 #san-francisco {
-  background-image: url("../images/sf.png");
+  background-image: url("../images/san\ fran.png");
 }
 
 #paris {
-  background-image: url("../images/paris.png");
+  background-image: url("../images/pariss.png");
 }
 
-#amsterdam {
-  background-image: url("../images/amsterdm.png");
+#london {
+  background-image: url("../images/london.png");
 }
 
 footer {

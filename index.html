@@ -13,44 +13,46 @@
     <div id="big-container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a City...</option>
-        <option value="">Seoul</option>
-        <option value="">New York</option>
-        <option value="">Rome</option>
-        <option value="">Toronto</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="Asia/Manila">Cebu</option>
       </select>
 
-      <div class="small-container" id="tokyo">
-        <div>
-          <h2>Tokyo 🇯🇵</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="small-container-city" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
 
-      <div class="small-container" id="san-francisco">
-        <div>
-          <h2>San Francisco 🇺🇸</h2>
-          <div class="date"></div>
+        <div class="small-container-city" id="san-francisco">
+          <div>
+            <h2>San Francisco 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time">></div>
         </div>
-        <div class="time">></div>
-      </div>
 
-      <div class="small-container" id="paris">
-        <div>
-          <h2>Paris 🇫🇷</h2>
-          <div class="date"></div>
+        <div class="small-container-city" id="paris">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
 
-      <div class="small-container" id="amsterdam">
-        <div>
-          <h2>Amsterdam 🇳🇱</h2>
-          <div class="date"></div>
+        <div class="small-container-city" id="london">
+          <div>
+            <h2>London 🇬🇧</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
 
       <footer>
